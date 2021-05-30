@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+	div.sel_custom_cat div.accr_data_cont {
+        display: none;
+    }
+    ul { list-style-type: none; }
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 80px;
+    }
+    h1 a {
+      font-size: 16px;
+    }
+    .accordion {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto 30px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      margin-left: 40%;
+    }
+    .accordion .link {
+      cursor: pointer;
+      display: block;
+      padding: 10px 10px 15px 30px;
+      font-size: 13px;
+      font-weight: 700;
+      position: relative;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #302e2e;
+    }
+
+    .accordion li:last-child .link { border-bottom: 0; }
+    
+   
+    .accordion li i {
+      position: absolute;
+      top: 16px;
+      left: 12px;
+      font-size: 18px;
+      
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+    }
+
+    .accordion li i.open_close_submenu {
+      right: 12px;
+      left: auto;
+      font-size: 16px;
+    }
+    .accordion li.open i.open_close_submenu {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    .submenu {
+      display: none;
+      font-size: 14px;
+    }
+    .submenu a {
+      display: block;
+      text-decoration: none;
+      padding: 5px;
+      padding-left: 42px;
+      -webkit-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+    }
+
+    .submenu a:hover {
+      background: #585757;
+      color: rgb(255, 254, 254);
+      width: 100px;
+    }
+    
+    .sel_custom_cat .accr_data_cont .accordion li i.open_close_submenu {
+      padding: 8px;
+      margin-top: -8px;
+      margin-right: 20%;
+      
+  }
+  .selected_opt_name{
+    padding-left: 45%;/*change here for position*/
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #302e2e;
+    
+  }
+  .selected_opt_name .fa-chevron-down{
+    margin-left: 20px;
+    padding: 2px;
+    border-radius: 50%;
+  }
+  .cat_ele a{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #302e2e;
+  }
+  .cat_ele .link{
+    font-size: 15px;
+    margin-left: -15px;
+    
+  }
+  .submenu a {
+    margin-left: -50px;
+   /* border-bottom: 1px solid black; */
+  }
+  .line-all{
+    background-color: black;
+    margin-left: 43%;
+    height: 1px;
+    width: 170px;
+    
+  }
+  .line-sub-cat{
+    background-color: black;
+    margin-left: 20%;
+    height: 1px;
+    width: 170px; 
+  }
+</style>
+</head>
+<body>
+
+
+  <div class="sel_custom_cat">
+  	<input type="hidden" class="selected_opt_val" name="selected_opt_val" id="selected_opt_val" value="0" />
+    <p class="selected_opt_name ">All Categories<i class="far fa-chevron-down"></i></p>
+    <!-- <div class="line-all"></div> -->
+    <div class="accr_data_cont">
+    	<div class="accr_data">
+        	<ul id="accordion" class="accordion">
+              <li>
+               <div class="cat_ele link" cat_id="1" cat_name="Web Design">Web Design<i class="open_close_submenu far fa-chevron-right"></i></div>
+              
+               <ul class="submenu">
+                  <li class="cat_ele" cat_id="5" cat_name="Photoshop"><a href="#">Photoshop</a></li>
+                  <li class="cat_ele" cat_id="6" cat_name="HTML"><a href="#">HTML</a></li>
+                  <li class="cat_ele" cat_id="7" cat_name="CSS"><a href="#">CSS</a></li>
+                </ul>
+              </li>
+              <li> 
+                <div class="cat_ele link" cat_id="2" cat_name="Coding">Coding<i class="open_close_submenu far fa-chevron-right"></i></div>
+                
+                <ul class="submenu">
+                  <li class="cat_ele" cat_id="8" cat_name="Javascript"><a href="#">Javascript</a></li>
+                  <li class="cat_ele" cat_id="9" cat_name="jQuery"><a href="#">jQuery</a></li>
+                  <li class="cat_ele" cat_id="10" cat_name="Ruby"><a href="#">Ruby</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="cat_ele link" cat_id="3" cat_name="Devices">Devices<i class="open_close_submenu far fa-chevron-right"></i></div>
+                
+                <ul class="submenu">
+                  <li class="cat_ele" cat_id="11" cat_name="Tablet"><a href="#">Tablet</a></li>
+                  <li class="cat_ele" cat_id="12" cat_name="Mobile"><a href="#">Mobile</a></li>
+                  <li class="cat_ele" cat_id="13" cat_name="Desktop"><a href="#">Desktop</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="cat_ele link" cat_id="4" cat_name="Global">Global<i class="open_close_submenu far fa-chevron-right"></i></div>
+                
+                <ul class="submenu">
+                  <li class="cat_ele" cat_id="14" cat_name="Google"><a href="#">Google</a></li>
+                  <li class="cat_ele" cat_id="15" cat_name="Bing"><a href="#">Bing</a></li>
+                  <li class="cat_ele" cat_id="16" cat_name="Yahoo"><a href="#">Yahoo</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+<script>
+$(document).ready(function(){
+  $(".selected_opt_name").click(function(){
+    $(".accr_data_cont").slideToggle(100);
+  });
+  
+  $('.sel_custom_cat .accr_data_cont .cat_ele.link i').on('click', function(e){
+  		e.stopPropagation();
+  });
+  
+  $(document).on('click', '.sel_custom_cat .accr_data_cont .cat_ele', function(){
+  	$('.sel_custom_cat .selected_opt_val').val($(this).attr('cat_id'));
+    $('.sel_custom_cat .selected_opt_name').hide().text( $(this).attr('cat_name') ).fadeIn(200);
+    $('.sel_custom_cat .accr_data_cont li.open').removeClass('open').find('.submenu').slideUp();
+    $(".accr_data_cont").slideToggle(100);
+    
+    if($('.sel_custom_cat .accr_data_cont .all_cats').attr('cat_id') == undefined)
+    	$('.sel_custom_cat .accr_data_cont .accr_data>.accordion>li:first-child').prepend(`
+    	<div class="cat_ele link all_cats" cat_id="0" cat_name="All Categories">All Categories</div>	
+    `);
+    
+    if( $(this).hasClass('all_cats') )
+    	$(this).remove();
+    
+  });
+  
+  
+  //START ACCORDION JS
+
+	const Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		let links = this.el.find('.open_close_submenu ');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		let $el = e.data.el;
+			$this = $(this),
+			$next = $this.closest('div').next();
+		console.log($el);
+		$next.slideToggle().parent().toggleClass('open');
+
+		if (!e.data.multiple) {        					$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	const accordion = new Accordion($('.sel_custom_cat #accordion'), false);
+
+//END ACCORDION JS
+
+  
+
+});
+
+
+
+
+</script>
+
+</body>
+</html>

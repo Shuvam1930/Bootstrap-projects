@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nishikanta Ray</title>
+    <link rel="stylesheet" href="nr.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    
+  </head>
+  <body >
+    <div class="jumbotron" id="my" style="text-align: center; background:linear-gradient(rgb(9, 20, 5),rgb(9, 161, 9),rgb(3, 41, 3));" >
+      <h2 style="font-size: 50px; "><a href="review.html" style="color: rgb(221, 184, 19); text-decoration: none; text-shadow: 2px 2px rgb(5, 27, 2);" ><b>Jungle View</b></a></h2>
+        <div class="scrollmenu">
+          <a href="jungleview.html"><b>Home</b></a>
+          <a href="about.html">About</a>
+          <a href="touristplace.html">Tourist place</a>
+          <a href="natureview.html">Nature view</a>
+          <a href="cityview.html">City view</a>
+          <a href="temple.html">Temple</a>  
+          <a href="wildlife.html">Wildlife</a>
+          <a href="agriculture.html">Agriculture</a>
+          <a href="news.html"> News</a>
+          <a href="socialmedia.html">Social media</a>
+          <a href="more.html"> More</a>
+          <a href="review.html" class="active">Review</a>
+        </div>
+    </div>          
+    <div class="container" >
+      <div class="jumbotron">
+        <div id="respond">
+          <h3 style="color: white; font-size: 40px;"><b>Leave a Review</b></h3>         
+          <form  method="post" id="commentform">        
+            <label for="comment_author" class="required">Your name</label>
+            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">    
+            <label for="email" class="required">Your email;</label>
+            <input type="email" name="email" id="email" value="" tabindex="2" required="required">      
+            <label for="comment" class="required">Your message</label>
+            <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>          
+            <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+            <input name="submit" type="submit" value="Submit comment" onclick="msg()" />                   
+          </form>             
+        </div> 
+      </div>
+    </div>      
+      <footer style="background-color: rgb(7, 94, 10); height: 40px; border: 2px solid black;">
+        <div class="text-center" style="color: rgb(221, 184, 19) ;
+          font-size: 18px;text-shadow: 2px 2px rgb(5, 27, 2);"> @nishikantaray2020</div>
+        </div>
+      </footer>   
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="js/ajax-utils.js"></script> -->
+  <script src="script.js"></script>
+  </body>
+</html>

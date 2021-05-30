@@ -1,0 +1,255 @@
+body{
+    background-color: rgb(13, 252, 44);
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Home Page */
+    .container .jumbotron {
+      height: 558px;
+      background:linear-gradient(rgb(12, 36, 2),rgb(50, 218, 58),rgb(3, 46, 3));
+      border-radius: 25px;
+      border:2px solid black;
+      display: inline-block;
+    }
+    .centered{
+        position:absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 15px;
+    }
+    #my.container{
+        background:linear-gradient(rgb(9, 20, 5),rgb(9, 161, 9),rgb(3, 41, 3));
+        border-radius:25px;
+    }
+    #name{
+      text-align: center;
+    }
+    #myn{
+      display: none;
+    }
+    /* End Home Page */
+}
+  /********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Home Page */
+    .container .jumbotron {
+      height: 432px;
+      background:linear-gradient(rgb(9, 27, 2),rgb(25, 129, 11),rgb(1, 20, 1));
+      border-radius: 25px;
+      border:2px solid black;
+      display: inline-block;
+    }
+    .centered{
+        position:absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 15px;
+    }
+    #my.container{
+        background:linear-gradient(rgb(9, 20, 5),rgb(9, 161, 9),rgb(3, 41, 3));
+        border-radius:25px;
+    }
+    #name{
+      text-align: center;
+    } .curve{
+      background:linear-gradient(rgb(7, 22, 1),rgb(206, 148, 148),rgb(1, 32, 1));
+        width:100%;
+        height:400px;
+        box-shadow: 0px 4px 10px 0px rgba(1, 2, 10, 0.36);
+        background-image: url('https://cdn.s3waas.gov.in/s3069d3bb002acd8d7dd095917f9efe4cb/uploads/2018/04/2018051586-1-768x1024.jpg');
+        padding: 0%;
+        position: relative;
+        margin: 0%;
+        border-bottom-width: 29px solid black;
+        animation-duration: 4s;
+        display: none;
+    }
+    /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .container .jumbotron {
+        background:linear-gradient(rgb(7, 22, 1),rgb(4, 139, 4),rgb(1, 32, 1));
+        border-radius: 25px;
+        border:2px solid black;
+        display: inline-block;
+        
+    }
+    .centered{
+        position:absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+    }
+    div.centered{
+        font-size: 15px;
+    }
+    .review{
+        position:absolute;
+       left: 50%;
+       margin-top: 45%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+    }
+    #my.container{
+        background:linear-gradient(rgb(9, 20, 5),rgb(9, 161, 9),rgb(3, 41, 3));
+        border-radius:25px;
+        padding-bottom: 30px;
+    }
+    #name{
+      text-align: center;
+    }
+    .curve{
+        display: none;
+    }
+}
+div.scrollmenu {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    }
+
+    div.scrollmenu a {
+    display: inline-block;
+    color: rgb(236, 240, 235);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    text-shadow: 2px 2px rgb(7, 7, 7);
+    
+    }
+
+div.scrollmenu a:hover {
+    background-color: rgb(23, 122, 45);
+}
+.container{
+    text-align: center;
+}
+a.active{
+    color:rgb(241, 238, 238);
+    background-color: rgb(25, 170, 12);
+}
+#respond {
+    margin-top: 40px;
+  }
+  
+  #respond input[type='text'],
+  #respond input[type='email'], 
+  #respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+  
+    line-height: 1.4em;
+  }
+  .fb-comment-comment {
+    width: 500px;
+  }
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+.curve{
+  background:linear-gradient(rgb(7, 22, 1),rgb(206, 148, 148),rgb(1, 32, 1));
+    width:100%;
+    height:400px;
+    box-shadow: 15px 10px 15px 15px #353434 ;
+    background-image: url('https://cdn.s3waas.gov.in/s3069d3bb002acd8d7dd095917f9efe4cb/uploads/2018/05/2018050840.jpg') ;
+    background-size: cover;
+    padding: 0%;
+    position: relative;
+    margin: 0%;
+    border-bottom-width: 29px solid black;
+    animation-duration: 4s;
+}
+p{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(11, 11, 12);
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-shadow: 2px solid rgb(5, 8, 27);
+  text-decoration-thickness: 5px;
+}
+
+h4{
+  color: rgb(0, 0, 0);
+}
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+.card{
+  background-color: gainsboro;
+  width: 600px;
+  height: 300px;
+  padding-top: 20px;
+  padding-left: 30px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
